@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Poppins:wght@400;500;600&family=Red+Hat+Display:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(0, 0%, 18%);
+    --second-color: hsl(0, 0%, 16%);
+    --title-color: hsl(244, 12%, 12%);
+    --text-color: hsl(244, 4%, 36%);
+    --body-color: hsl(208, 97%, 85%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  }
+  
+
+body{
+    background: rgb(64,64,64);
+    background: linear-gradient(0deg, rgba(64,64,64,1) 0%, rgba(144,144,144,1) 100%);
+   }
+
+
+pre{
+    border:thin solid gainsboro;
+    border-radius: 1em;
+    background-color: ghostwhite;
+    margin: 1em;
+    padding: 1em;
+    color: rgb(44, 44, 44);
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: break-word;
+}
+
+#navbg {
+    position: fixed;
+    --bs-bg-opacity: 1;
+    background-color: #322b2e;
+    font-family: 'Kanit', sans-serif;
+}
+.img-logo{
+    vertical-align: baseline;
+    margin-right: 1rem;
+}
+.img-logon{
+    text-align: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+h1 {
+    margin-top: 8rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(1.325rem + .9vw);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+p { 
+    font-family: monospace;
+    line-height: 200%;
+}
+
+#texto {
+    margin-top: 2rem;
+}
+
+.col-3{ 
+    flex: 0 0 auto;
+    width: 30%;
+}
+.centrar-arriba{
+    margin-block-end: auto;
+}
+.row {
+    justify-content: center;
+}
+
+.tpre {
+    color: #9b9b9b;
+    font-family: 'Kanit', sans-serif;
+}
+
+.mt{
+    margin-top: 1rem;
+}
+
+span{
+    font-family: 'Kanit', sans-serif;
+}
+
+.color {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    
+}
+.color:hover {
+    background-color: #6c6c6c;
+    color: rgb(225, 225, 225);
+}
+
+#nave {
+    font-size: 1rem;
+}
+
+.carousel {
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-indicators {
+    bottom: -11px;
+}
+
+#catalogo{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#li:hover{
+    background-color: #585858;
+    border-radius: 5px;
+}
+
+.tam-t{
+    font-size: small;
+}
+
+
+/*VER MÁS*/
+.margin{
+    margin-top: 5rem;
+}
+
+#estilo-b{
+    width: 100%;
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px hsla(0, 0%, 0%, 0.5);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+/* GALLERY IMAGENES */
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+
+  footer {
+    margin-top: 4rem;
+    max-width: 100%;
+  }
+
+  /*Formulario*/
+label>strong{
+    font-size: medium;
+}
+
+.input-t {
+    font-family: monospace;
+    font-size: small;
+    margin-top: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    margin-top: 1.2rem;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+.form-control{
+    font-size: small;
+}
+
+.label-m{
+    font-size: small;
+    margin: 0;
+    text-align: left;
+}
+
+#enviar {
+    border-radius: 4px;
+    background: #6a6a6a;
+    color: rgb(255 255 255);
+    margin: 1rem;
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3.5rem;
+    margin-top: 3rem;
+}
+
+  @media (min-width: 768px){
+      .d-md-block {
+      margin-top: 7rem;
+      display: block!important;
+  }
+    /* FORMULARIO */
+        #enviar {
+        margin-top: 4rem;;
+        width: 15%;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 3.5rem;
+        }
+
+        #enviar:hover {
+            background-color: #949494;
+            color: whitesmoke;
+        }
+        #tam-t {
+            font-size: 0.6rem;
+        }
+
+  }
+
+  .espaciado{
+    margin-top: 1rem;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .margin-derecha {
+    margin-right: 1rem;
+  }
+
+  li {
+    list-style: none;
+  }
+    
+
+@media (min-width: 992px) {
+
+    .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    .espaciado{
+        margin-top: 0rem;
+    }
+
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        margin: auto;
+        max-width: 1100px;
+        flex-direction: row;
+    }
+    .d-md-block{
+        margin-top: 8rem;
+    }
+}
